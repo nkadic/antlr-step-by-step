@@ -20,14 +20,12 @@ package org.meri.antlr_step_by_step.parsers;
 package org.meri.antlr_step_by_step.parsers;
 
 //add imports 
-import org.meri.antlr_step_by_step.parsers.S003HelloWordWithErrorHandlingCompiler.S003HelloWordError;
 }
 
 //change error handling in all parser rules
 @rulecatch {
   catch (RecognitionException e) {
 	//Custom handling of an exception. Any java code is allowed.
-	throw new S003HelloWordError(":(", e); 
   }
 }
 

@@ -20,7 +20,6 @@ package org.meri.antlr_step_by_step.parsers;
 package org.meri.antlr_step_by_step.parsers;
 
 //add imports 
-import org.meri.antlr_step_by_step.parsers.S002HelloWordWithErrorHandlingCompiler.S002HelloWordError;
 }
 
 // ***************** lexer rules:
@@ -33,5 +32,4 @@ ENDSYMBOL:'!';
 expression : SALUTATION ENDSYMBOL;
 catch [RecognitionException e] {
 	//Custom handling of an exception. Any java code is allowed.
-	throw new S002HelloWordError(":(", e); 
 }

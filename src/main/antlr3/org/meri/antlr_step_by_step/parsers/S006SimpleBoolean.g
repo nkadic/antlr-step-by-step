@@ -12,14 +12,12 @@ options
 //package, we have to add package declaration on top of it
 @lexer::header {
 package org.meri.antlr_step_by_step.parsers;
-import org.meri.antlr_step_by_step.parsers.S006SimpleBooleanCompiler.S006Error;
 }
 
 //as the generated parser will reside in org.meri.antlr_step_by_step.parsers 
 //package, we have to add package declaration on top of it
 @parser::header {
 package org.meri.antlr_step_by_step.parsers;
-import org.meri.antlr_step_by_step.parsers.S006SimpleBooleanCompiler.S006Error;
 }
 
 //override some methods and add new members to generated lexer
@@ -27,7 +25,6 @@ import org.meri.antlr_step_by_step.parsers.S006SimpleBooleanCompiler.S006Error;
   //override method
   public void reportError(RecognitionException e) {
     displayRecognitionError(this.getTokenNames(), e);
-    throw new S006Error(":(", e); 
   }
   
 }
@@ -37,7 +34,6 @@ import org.meri.antlr_step_by_step.parsers.S006SimpleBooleanCompiler.S006Error;
   //override method
   public void reportError(RecognitionException e) {
     displayRecognitionError(this.getTokenNames(), e);
-    throw new S006Error(":(", e); 
   }
   
 }

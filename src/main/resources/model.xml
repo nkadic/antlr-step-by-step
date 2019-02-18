@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rule>
+    <parser-expression>
+        <line name="l0">
+            <tokens>
+                <field name="f1"></field>
+            </tokens>
+        </line>
+        <line name="l1">
+            <tokens>
+                <field name="f1"></field>
+                <field name="f2"></field>
+                <field name="f3"></field>
+            </tokens>
+        </line>
+        <line name="l2">
+            <tokens>
+                <field name="f1"></field>
+                <field name="f2"></field>
+                <field name="f3"></field>
+            </tokens>
+        </line>
+        <line name="l3">
+            <tokens>
+                <field name="f1"></field>
+            </tokens>
+        </line>
+        <line name="l4">
+            <tokens>
+                <field name="f1"></field>
+                <field name="f2"></field>
+            </tokens>
+        </line>
+    </parser-expression>
+    <logic>
+        <list name="l2.f1">
+            <keys>
+                <key name="l2.f2"></key>
+                <key name="l3.f3"></key>
+            </keys>
+            <leaf name="l2.f2"></leaf>
+            <leaf name="l3.f3"></leaf>
+            <leaf-list name="l2.f2"></leaf-list>
+            <container name="l3.f1">
+                <leaf name="l4.f1"></leaf>
+                <leaf-list name="l2.f2"></leaf-list>
+            </container>
+        </list>
+        <container name="l0.f1">
+            <list name="l1.f1">
+                <leaf-list name="l1.f1"></leaf-list>
+                <keys>
+                    <key name="l1.f2"></key>
+                    <key name="l1.f3"></key>
+                </keys>
+                <list name="l2.f1">
+                    <keys>
+                        <key name="l2.f2"></key>
+                        <key name="l3.f3"></key>
+                    </keys>
+                    <leaf name="l2.f2"></leaf>
+                    <leaf name="l3.f3"></leaf>
+                    <leaf-list name="l2.f2"></leaf-list>
+                    <container name="l3.f1">
+                        <leaf name="l4.f1"></leaf>
+                        <leaf-list name="l2.f2"></leaf-list>
+                    </container>
+                </list>
+            </list>
+        </container>
+
+        <list name="l2.f1">
+            <keys>
+                <key name="l2.f2"></key>
+                <key name="l3.f3"></key>
+            </keys>
+            <leaf name="l2.f2"></leaf>
+            <leaf name="l3.f3"></leaf>
+            <leaf-list name="l2.f2"></leaf-list>
+            <container name="l3.f1">
+                <leaf name="l4.f1"></leaf>
+                <leaf-list name="l2.f2"></leaf-list>
+            </container>
+        </list>
+        <container name="l0.f1">
+            <list name="l1.f1">
+                <leaf-list name="l1.f1"></leaf-list>
+                <keys>
+                    <key name="l1.f2"></key>
+                    <key name="l1.f3"></key>
+                </keys>
+                <list name="l2.f1">
+                    <keys>
+                        <key name="l2.f2"></key>
+                        <key name="l3.f3"></key>
+                    </keys>
+                    <leaf name="l2.f2"></leaf>
+                    <leaf name="l3.f3"></leaf>
+                    <leaf-list name="l2.f2"></leaf-list>
+                    <container name="l3.f1">
+                        <leaf name="l4.f1"></leaf>
+                        <leaf-list name="l2.f2"></leaf-list>
+                    </container>
+                </list>
+            </list>
+        </container>
+    </logic>
+</rule>

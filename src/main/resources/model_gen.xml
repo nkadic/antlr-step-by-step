@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<c:rule xmlns:c="http://irc-sdn/cli2yang">
+  <c:parser-expression>
+      <c:line name="l1">
+          <c:tokens>
+              <c:field name="f1"></c:field>
+          </c:tokens>
+      </c:line>
+    <c:line name="l2">
+      <c:tokens>
+          <c:field name="f1"></c:field>
+          <c:field name="f2"></c:field>
+          <c:field name="f3"></c:field>
+      </c:tokens>
+    </c:line>
+  </c:parser-expression>
+  <c:logic>
+    <c:container name="l1.f1">
+      <c:list name="l2.f2">
+        <c:keys>
+            <c:key name="l2.f2"></c:key>
+            <c:key name="l2.f3"></c:key>
+        </c:keys>
+      </c:list>
+      <c:container/>
+    </c:container>
+  </c:logic>
+</c:rule>

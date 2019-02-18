@@ -1,4 +1,4 @@
-// $ANTLR 3.5.2 org\\meri\\antlr_step_by_step\\parsers\\S004HelloWordWithErrorHandling.g 2018-10-21 20:12:26
+// $ANTLR 3.5.2 org\\meri\\antlr_step_by_step\\parsers\\S004HelloWordWithErrorHandling.g 2018-10-20 15:11:55
 
 package org.meri.antlr_step_by_step.parsers;
 

@@ -1,0 +1,12 @@
+{% set names_csv = hw(names) %}
+{% set uppers = upperNames(names) %}
+<html>
+<head>
+<title>{{ title }}</title>
+</head>
+<body>
+Hello {{ names_csv }}.
+Hello {{ hw(names) }}.
+Hello {{  hw(uppers)  }}.
+</body>
+</html>
